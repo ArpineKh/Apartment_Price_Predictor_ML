@@ -10,7 +10,7 @@ apartment_price_predictor/
 │   └── apartments.csv
 ├── model.py     ← the math: predict(), loss(), gradient(), normalize()
 ├── train.py     ← the process: load data, train, print results
-└── plot.py      ← visualize the fit (not built yet)
+└── plot.py      ← visualize the fit
 ```
 
 ---
@@ -18,9 +18,7 @@ apartment_price_predictor/
 ## The core idea in one line
 **guess → measure error → compute slope of error → step downhill → repeat**
 
-Everything below is one piece of that loop.
 
----
 
 ## 1. `predict()` — the model itself
 
