@@ -22,14 +22,14 @@ def normalize(x):
 
 
 
-print("prediiiiction isss" , predict(80, 2000, 10000)) 
+print("prediction is" , predict(80, 2000, 10000)) 
 predictions = np.array([80000, 110000, 150000])
 actual = np.array([52000, 75000, 102000])
 print(loss(predictions, actual))
 
 sizes = np.array([60])
 actual = np.array([90000])
-predictions = predict(sizes, 1500, 5000)   # should give array([95000])
+predictions = predict(sizes, 1500, 5000)  
 dw, db = gradient(sizes, predictions, actual)
 print(dw, db)
 
